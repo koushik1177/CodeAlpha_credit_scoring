@@ -1,69 +1,72 @@
-# 💳 Decoupled Credit Scoring & Risk Evaluation System
+# 💳 Credit Scoring & Risk Evaluation System
 
-An enterprise-grade Python & Machine Learning credit scoring platform with **3 decoupled top-level directories**: `frontend/`, `backend/`, and `database/`.
+A Machine Learning-based credit scoring system that evaluates an applicant's creditworthiness using financial and credit history data.
 
-Predicts whether a loan applicant is **Creditworthy (Approved)** or **Not Creditworthy (Denied)** based on financial profile, debt leverage, credit bureau rating, and payment history.
+## 🚀 Features
 
----
+* 📊 Creditworthiness prediction
+* 🤖 Machine Learning-based risk evaluation
+* 📈 Model performance comparison
+* 🧹 Data preprocessing pipeline
+* 📄 Report generation
+* 🗄️ SQLite-based record management
+* 🖥️ Interactive Streamlit interface
 
-## 📂 3-Tier Decoupled Project Architecture
+## 🛠️ Tech Stack
 
+* Python
+* Scikit-learn
+* Pandas & NumPy
+* Streamlit
+* SQLite
+* Joblib
+
+## 🧠 Machine Learning
+
+The system evaluates multiple classification models, including:
+
+* Logistic Regression
+* Random Forest
+* Decision Tree
+
+**Best Model:** Logistic Regression
+**Accuracy:** 92%
+**F1-Score:** 0.9375
+**ROC-AUC:** 0.9723
+
+## 📂 Project Structure
+
+```text
+CodeAlpha_credit_scoring/
+├── frontend/
+├── backend/
+├── database/
+├── app.py
+├── requirements.txt
+└── README.md
 ```
-koushik_credit_scoring/
-├── frontend/                        # STREAMLIT UI TIER
-│   └── app.py                       # Modern web dashboard & visual controls
-├── backend/                         # MACHINE LEARNING & SERVICES TIER
-│   ├── config/                      # Backend settings & paths
-│   │   └── settings.py
-│   ├── dataset/                     # Financial datasets
-│   │   └── credit_scoring.csv
-│   ├── models/                      # ML model artifacts
-│   │   ├── best_model.joblib
-│   │   ├── preprocessor.joblib
-│   │   └── model_metrics.json
-│   ├── services/                    # Reporting & certificate export services
-│   │   └── report_service.py
-│   └── src/                         # ML Pipeline source code
-│       ├── data_loader.py
-│       ├── preprocessing.py
-│       ├── train.py
-│       └── predict.py
-├── database/                        # SQLITE DATABASE AUDIT TIER
-│   ├── db_manager.py                # Database Manager & Audit Inspector
-│   └── credit_records.db            # SQLite database file
-├── app.py                           # Root VS Code entrypoint
-├── requirements.txt                 # Project dependencies
-└── README.md                        # Documentation & setup guide
-```
 
----
-
-## 🚀 Quick Start Guide (VS Code)
-
-### 1. Open Project Folder in VS Code
-
-Click **File** ➡️ **Open Folder...** ➡️ select `/Users/koushik/Desktop/koushik_credit_scoring`.
-
-### 2. Open Terminal & Activate Environment
-
-Open terminal (`Cmd + ~`) and run:
+## ⚙️ Run Locally
 
 ```bash
-source venv/bin/activate
-```
-
-### 3. Launch Web Application
-
-```bash
+git clone https://github.com/koushik1177/CodeAlpha_credit_scoring.git
+cd CodeAlpha_credit_scoring
+pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Open **`http://localhost:8501`** in your browser!
+Open:
 
----
+```text
+http://localhost:8501
+```
 
-## 📊 Evaluated Classification Models & Leaderboard
+## ⚠️ Disclaimer
 
-- **Logistic Regression**: Accuracy 92.0%, F1-Score 0.9375, ROC-AUC 0.9723 *(Top Model)*
-- **Random Forest**: Accuracy 85.0%, F1-Score 0.8889
-- **Decision Tree**: Accuracy 79.0%, F1-Score 0.8409
+This project is developed for educational and demonstration purposes and should not be used as the sole basis for real-world lending decisions.
+
+## 👨‍💻 Author
+
+**Koushik Reddy**
+
+Built as part of the **CodeAlpha Internship**.
