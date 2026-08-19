@@ -1,0 +1,73 @@
+{
+    "best_model_name": "Logistic Regression",
+    "metrics": {
+        "Logistic Regression": {
+            "accuracy": 0.92,
+            "precision": 0.9302,
+            "recall": 0.9449,
+            "f1_score": 0.9375,
+            "roc_auc": 0.9723,
+            "confusion_matrix": [
+                [
+                    64,
+                    9
+                ],
+                [
+                    7,
+                    120
+                ]
+            ]
+        },
+        "Decision Tree": {
+            "accuracy": 0.79,
+            "precision": 0.8102,
+            "recall": 0.874,
+            "f1_score": 0.8409,
+            "roc_auc": 0.8074,
+            "confusion_matrix": [
+                [
+                    47,
+                    26
+                ],
+                [
+                    16,
+                    111
+                ]
+            ]
+        },
+        "Random Forest": {
+            "accuracy": 0.85,
+            "precision": 0.8392,
+            "recall": 0.9449,
+            "f1_score": 0.8889,
+            "roc_auc": 0.9508,
+            "confusion_matrix": [
+                [
+                    50,
+                    23
+                ],
+                [
+                    7,
+                    120
+                ]
+            ]
+        }
+    },
+    "feature_importances": {
+        "num__Age": 0.1599,
+        "num__Income": 1.802,
+        "num__Loan_Amount": 0.9546,
+        "num__Existing_Debt": 0.8195,
+        "num__Number_of_Loans": 0.1073,
+        "num__Credit_Score_Value": 1.947,
+        "cat__Employment_Status_Employed": 1.0449,
+        "cat__Employment_Status_Self-Employed": 0.4472,
+        "cat__Employment_Status_Unemployed": 2.5647,
+        "cat__Credit_History_Fair": 0.1352,
+        "cat__Credit_History_Good": 0.9992,
+        "cat__Credit_History_Poor": 1.9366,
+        "cat__Payment_History_Defaulted": 3.7561,
+        "cat__Payment_History_Delayed": 0.5123,
+        "cat__Payment_History_On-Time": 3.1958
+    }
+}
